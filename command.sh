@@ -17,6 +17,29 @@ python -m torch.distributed.launch --nproc_per_node 2 --master_port 12345  main.
 python infer_pt.py --cfg configs/swin/yz_fuqi.yaml   --pretrained output/yz_fuqi_1108/default/best_ckpt.pth --local_rank 0
 
 
+
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.65.01    Driver Version: 515.65.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:20:00.0 Off |                  N/A |
+| 22%   27C    P8    17W / 250W |      0MiB / 11264MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+
 # 环境:
 Package                Version
 ---------------------- ---------------
