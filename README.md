@@ -1,4 +1,4 @@
-# 请参考 command.sh
+# 重要！重要！重要!请参考 command.sh
 
 # Swin Transformer
 
