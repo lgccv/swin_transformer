@@ -1,0 +1,26 @@
+DATA:
+  DATASET: imagenet
+  IMG_SIZE: 448
+  BATCH_SIZE: 16
+  DATA_PATH: '/home/apulis-test/teamdata/yz_dataset/classification/'
+  NAME_CLASSES: ["C-F501-12-P03-44-TC","C-G513-12-P22-44-TC","CL_ANT10_GND-1","CL_ANT2_FEED_2","CL0200-H","CL0201-H","S516S00528"]
+
+MODEL:
+  TYPE: swin
+  NAME: yz_model
+  DROP_PATH_RATE: 0.2
+  NUM_CLASSES: 7
+  RESUME: ''
+  SWIN:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 6, 2 ]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+    WINDOW_SIZE: 7
+
+TRAIN:
+  EPOCHS: 300
+  WARMUP_EPOCHS: 5
+  WEIGHT_DECAY: 0.1
+  BASE_LR: 1.25e-4
+  WARMUP_LR: 1.25e-7
+  MIN_LR: 1.25e-6
