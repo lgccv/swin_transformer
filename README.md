@@ -1,4 +1,4 @@
-# read command.sh
+# 请参考 command.sh
 
 # Swin Transformer
 
